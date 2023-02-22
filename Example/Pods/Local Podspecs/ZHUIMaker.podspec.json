@@ -1,9 +1,9 @@
 {
   "name": "ZHUIMaker",
   "version": "0.1.0",
-  "summary": "A short description of ZHUIMaker.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Zackary Huang/ZHUIMaker",
+  "summary": "A framework to declare UI element more efficiently.",
+  "description": "ZHUIMaker is a framework to declare UI element more efficiently with chain sytax grammar.",
+  "homepage": "https://github.com/zackaryhuang/ZHUIMaker",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,13 +12,22 @@
     "Zackary Huang": "huangchao0623@126.com"
   },
   "source": {
-    "git": "https://github.com/Zackary Huang/ZHUIMaker.git",
+    "git": "https://github.com/zackaryhuang/ZHUIMaker",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "10.0"
   },
   "source_files": "ZHUIMaker/Classes/**/*",
+  "public_header_files": [
+    "ZHUIMaker/Classes/Button/UIButton+PropertyMaker.h",
+    "ZHUIMaker/Classes/CollectionView/UICollectionView+PropertyMaker.h",
+    "ZHUIMaker/Classes/ImageView/UIImageView+PropertyMaker.h",
+    "ZHUIMaker/Classes/Label/UILabel+PropertyMaker.h",
+    "ZHUIMaker/Classes/ScrollView/UIScrollView+PropertyMaker.h",
+    "ZHUIMaker/Classes/TableView/UITableView+PropertyMaker.h",
+    "ZHUIMaker/Classes/View/UIView+PropertyMaker.h"
+  ],
   "dependencies": {
     "Masonry": [
 
