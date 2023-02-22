@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@import Masonry;
+#import <Masonry/Masonry.h>
 #import "ZHScrollViewPropertyMaker.h"
 
 NS_ASSUME_NONNULL_BEGIN

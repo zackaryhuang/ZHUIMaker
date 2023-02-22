@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ZHViewPropertyMaker.h"
-@import Masonry;
+#import <Masonry/Masonry.h>
 
 @interface UIView (PropertyMaker)
 
