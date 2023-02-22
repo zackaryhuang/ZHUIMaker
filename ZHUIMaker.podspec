@@ -31,15 +31,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'ZHUIMaker/Classes/**/*'
-  s.public_header_files = [
-      "ZHUIMaker/Classes/Button/UIButton+PropertyMaker.h",
-      "ZHUIMaker/Classes/CollectionView/UICollectionView+PropertyMaker.h",
-      "ZHUIMaker/Classes/ImageView/UIImageView+PropertyMaker.h",
-      "ZHUIMaker/Classes/Label/UILabel+PropertyMaker.h",
-      "ZHUIMaker/Classes/ScrollView/UIScrollView+PropertyMaker.h",
-      "ZHUIMaker/Classes/TableView/UITableView+PropertyMaker.h",
-      "ZHUIMaker/Classes/View/UIView+PropertyMaker.h",
-    ]
   # s.resource_bundles = {
   #   'ZHUIMaker' => ['ZHUIMaker/Assets/*.png']
   # }
