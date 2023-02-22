@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'ZHUIMaker/Classes/**/*.{h,m}'
-  spec.public_header_files = [
+  s.public_header_files = [
       "ZHUIMaker/Classes/Button/UIButton+PropertyMaker.h",
       "ZHUIMaker/Classes/CollectionView/UICollectionView+PropertyMaker.h",
       "ZHUIMaker/Classes/ImageView/UIImageView+PropertyMaker.h",
