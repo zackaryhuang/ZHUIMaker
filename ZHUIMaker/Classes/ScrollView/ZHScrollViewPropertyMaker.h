@@ -35,9 +35,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy, readonly) ZHScrollViewPropertyMaker *(^indicatorStyle)(UIScrollViewIndicatorStyle indicatorStyle);
 
-@property (nonatomic, copy, readonly) ZHScrollViewPropertyMaker *(^verticalScrollIndicatorInsets)(UIEdgeInsets verticalScrollIndicatorInsets);
+@property (nonatomic, copy, readonly) ZHScrollViewPropertyMaker *(^verticalScrollIndicatorInsets)(UIEdgeInsets verticalScrollIndicatorInsets) API_AVAILABLE(ios(11.1), tvos(11.1));
 
-@property (nonatomic, copy, readonly) ZHScrollViewPropertyMaker *(^horizontalScrollIndicatorInsets)(UIEdgeInsets horizontalScrollIndicatorInsets);
+@property (nonatomic, copy, readonly) ZHScrollViewPropertyMaker *(^horizontalScrollIndicatorInsets)(UIEdgeInsets horizontalScrollIndicatorInsets) API_AVAILABLE(ios(11.1), tvos(11.1));;
 @end
 
 NS_ASSUME_NONNULL_END

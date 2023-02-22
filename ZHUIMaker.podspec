@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZHUIMaker'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A framework to declare UI element more efficiently.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   ZHUIMaker is a framework to declare UI element more efficiently with chain sytax grammar.
                    DESC
 
-  s.homepage         = 'https://github.com/zackaryhuang/ZHUIMaker'
+  s.homepage         = 'https://github.com/zackaryhuang/ZHUIMaker.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Zackary Huang' => 'huangchao0623@126.com' }
-  s.source           = { :git => 'https://github.com/zackaryhuang/ZHUIMaker', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zackaryhuang/ZHUIMaker.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
