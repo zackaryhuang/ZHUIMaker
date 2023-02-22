@@ -1,0 +1,27 @@
+{
+  "name": "ZHUIMaker",
+  "version": "0.1.0",
+  "summary": "A short description of ZHUIMaker.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Zackary Huang/ZHUIMaker",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Zackary Huang": "huangchao0623@126.com"
+  },
+  "source": {
+    "git": "https://github.com/Zackary Huang/ZHUIMaker.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZHUIMaker/Classes/**/*",
+  "dependencies": {
+    "Masonry": [
+
+    ]
+  }
+}

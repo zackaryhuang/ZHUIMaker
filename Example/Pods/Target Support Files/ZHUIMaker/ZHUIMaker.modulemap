@@ -1,0 +1,6 @@
+framework module ZHUIMaker {
+  umbrella header "ZHUIMaker-umbrella.h"
+
+  export *
+  module * { export * }
+}

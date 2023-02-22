@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		211E2B7701E8B3DF4A703E5D /* ZHUIMaker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZHUIMaker.podspec; path = ../ZHUIMaker.podspec; sourceTree = "<group>"; };
+		211E2B7701E8B3DF4A703E5D /* ZHUIMaker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZHUIMaker.podspec; path = ../ZHUIMaker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* ZHUIMaker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHUIMaker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,12 +61,12 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2D3A231EDED749A53616630 /* Pods-ZHUIMaker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHUIMaker_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZHUIMaker_Tests/Pods-ZHUIMaker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4ED0A494AC6AF0B8C8439CE /* Pods-ZHUIMaker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHUIMaker_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZHUIMaker_Example/Pods-ZHUIMaker_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B1565F69BB6F270BDC42C57E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B1565F69BB6F270BDC42C57E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B56BF32AFE49BC9E2D7B38E9 /* Pods-ZHUIMaker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHUIMaker_Example.release.xcconfig"; path = "Target Support Files/Pods-ZHUIMaker_Example/Pods-ZHUIMaker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BE85C43F75AA0EF03460ABA1 /* Pods_ZHUIMaker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHUIMaker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E318BCC062B311DAEE8BF23B /* Pods_ZHUIMaker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHUIMaker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF76BCA890139FF9CF0B6849 /* Pods-ZHUIMaker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHUIMaker_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZHUIMaker_Tests/Pods-ZHUIMaker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F1FB34B90157AAEDF0DAAEA7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F1FB34B90157AAEDF0DAAEA7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				A2D3A231EDED749A53616630 /* Pods-ZHUIMaker_Tests.debug.xcconfig */,
 				EF76BCA890139FF9CF0B6849 /* Pods-ZHUIMaker_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Zackary Huang";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = CKCK9S26WL;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,10 +306,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZHUIMaker_Example/Pods-ZHUIMaker_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ZHUIMaker/ZHUIMaker.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZHUIMaker.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +518,7 @@
 			baseConfigurationReference = A4ED0A494AC6AF0B8C8439CE /* Pods-ZHUIMaker_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CKCK9S26WL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZHUIMaker/ZHUIMaker-Prefix.pch";
 				INFOPLIST_FILE = "ZHUIMaker/ZHUIMaker-Info.plist";
@@ -529,6 +535,7 @@
 			baseConfigurationReference = B56BF32AFE49BC9E2D7B38E9 /* Pods-ZHUIMaker_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CKCK9S26WL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZHUIMaker/ZHUIMaker-Prefix.pch";
 				INFOPLIST_FILE = "ZHUIMaker/ZHUIMaker-Info.plist";
